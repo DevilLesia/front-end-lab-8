@@ -1,0 +1,90 @@
+body {
+  background-color: #dcbb9a;
+  color: #000000; }
+
+#content {
+  width: 950px;
+  background-color: #ffffff;
+  margin: auto;
+  padding: 20px; }
+  #content a {
+    color: #3d70a1; }
+  #content img {
+    border: 2px solid #893c00;
+    border-radius: 1px;
+    padding: 3px; }
+  #content .img-left {
+    float: left;
+    margin-right: 20px; }
+  #content .img-right {
+    float: right;
+    margin-left: 20px; }
+  #content h1 {
+    text-align: center;
+    text-transform: capitalize; }
+  #content h2 {
+    text-align: left; }
+  #content div.brief {
+    float: left;
+    padding: 20px;
+    margin: 0 20px 0 0;
+    width: 380px;
+    box-sizing: border-box;
+    background-color: #fadcba;
+    color: #000000; }
+  #content h2,
+  #content h1 {
+    color: #893c00; }
+  #content table {
+    border-collapse: collapse;
+    width: 95%; }
+    #content table caption {
+      text-align: right;
+      color: #000000; }
+    #content table th {
+      color: #000000;
+      background-color: #e0e0e0;
+      height: 50px;
+      text-align: left;
+      border-collapse: separate;
+      border-spacing: 1px;
+      text-transform: uppercase;
+      font-weight: normal;
+      padding-left: 15px;
+      border-right: 1px solid #fff; }
+      #content table th:last-child {
+        border-right: none; }
+  #content td {
+    background-color: #ffffff;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0; }
+  #content form div#form_fields {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; }
+  #content form div.name {
+    width: 49.5%;
+    flex-direction: column; }
+  #content form label {
+    display: block;
+    color: #808080; }
+  #content form input[type=text],
+  #content form textarea,
+  #content form #contact_email {
+    width: 100%;
+    padding: 5px 5px;
+    margin: 8px 0;
+    box-sizing: border-box; }
+  #content form button {
+    background-color: #ffffff;
+    color: #3d70a1;
+    border: 1px solid #3d70a1;
+    padding: 10px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer; }
+
+/*# sourceMappingURL=style1.css.map */

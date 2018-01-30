@@ -1,0 +1,115 @@
+ @mixin caption_letter ($text) {
+ 	text-transform: $text;
+ }
+ 
+ body {
+ 	background-color: $color-main;
+ 	color: $color-contenttext;
+ }
+ 
+ #content {
+ 	width: 950px;
+ 	background-color: $background-color;
+ 	margin: auto;
+ 	padding: 20px;
+ 	a {
+ 		color: $color-a;
+ 	}
+ 	img {
+ 		border: 2px solid $color-h;
+ 		border-radius: 1px;
+ 		padding: 3px;
+ 	}
+ 	.img-left {
+ 		float: left;
+ 		margin-right: 20px;
+ 	}
+ 	.img-right {
+ 		float: right;
+ 		margin-left: 20px;
+ 	}
+ 	h1 {
+ 		text-align: center;
+ 		@include caption_letter($text: $text-transform);
+ 	}
+ 	h2 {
+ 		text-align: left;
+ 	}
+ 	div.brief {
+ 		float: left;
+ 		padding: 20px;
+ 		margin: $margin-brief;
+ 		width: $width-brief;
+ 		box-sizing: border-box;
+ 		background-color: $text-kub;
+ 		color: $text-kub-font;
+ 	}
+ 	h2,
+ 	h1 {
+ 		color: $color-h;
+ 	}
+ 	table {
+ 		border-collapse: collapse;
+ 		width: 95%;
+ 		caption {
+ 			text-align: right;
+ 			color: $color-text-th;
+ 		}
+ 		th {
+ 			color: $color-text-th;
+ 			background-color: $color-th;
+ 			height: 50px;
+ 			text-align: left;
+ 			border-collapse: separate;
+ 			border-spacing: 1px;
+ 			text-transform: uppercase;
+ 			font-weight: normal;
+ 			padding-left: 15px;
+ 			border-right: 1px solid #fff;
+ 			&:last-child {
+ 				border-right: none;
+ 			}
+ 		}
+ 	}
+ 	td {
+ 		background-color: $color-th-bg;
+ 		padding: 10px;
+ 		border-bottom: 1px solid $color-th;
+ 		//border-collapse: collapse;
+ 	}
+ 	form {
+ 		div#form_fields {
+ 			display: flex;
+ 			justify-content: space-between;
+ 			width: 100%;
+ 		}
+ 		div.name {
+ 			width: 49.5%;
+ 			flex-direction: column;
+ 		}
+ 		label {
+ 			display: block;
+ 			color: $color-lable;
+ 		}
+ 		input[type=text],
+ 		textarea,
+ 		#contact_email {
+ 			width: 100%;
+ 			padding: 5px 5px;
+ 			margin: 8px 0;
+ 			box-sizing: border-box;
+ 		}
+ 		button {
+ 			background-color: $background-color;
+ 			color: $color-button;
+ 			border: 1px solid $color-button;
+ 			padding: 10px 80px;
+ 			text-align: center;
+ 			text-decoration: none;
+ 			display: inline-block;
+ 			font-size: 16px;
+ 			margin: 4px 2px;
+ 			cursor: pointer;
+ 		}
+ 	}
+ }
