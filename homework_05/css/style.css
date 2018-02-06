@@ -1,0 +1,236 @@
+* {
+	text-decoration: none;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+
+/*--- Mobile-first ---*/
+
+.main-nav li {
+	border-bottom: 1px solid silver;
+	text-align: left;
+	padding: 10px 0 10px 20px;
+	background-color: #ccc;
+}
+
+.main-nav a {
+	color: #464547;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+
+.main-nav a:hover {
+	color: #39C2D7;
+}
+
+.index-banner {
+	background: url("../img/banner.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	height: 250px;
+}
+
+.vertical-center {
+	color: #fff;
+	background-color: #39C2D7;
+	font-size: 1.120em;
+	text-align: left;
+	line-height: 25px;
+	position: absolute;
+	left: 15px;
+	right: 15px;
+	bottom: 15px;
+	padding: 10px;
+}
+
+.news {
+	color: #333;
+	padding: 10px 0;
+	margin: 15px;
+}
+
+.figcaption {
+	text-align: left;
+	padding: 0 10px;
+}
+
+.figcaption h4 {
+	font-size: 0.9em;
+}
+
+.figcaption p {
+	font-size: 0.7em;
+}
+
+figure {
+	background-color: #CCC;
+}
+
+footer {
+	background-color: #39C2D7;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 15px 0 25px;
+}
+
+footer li {
+	text-decoration: underline;
+	color: #fff;
+	display: block;
+	font-size: 14px;
+	padding-top: 5px;
+}
+
+.copy {
+	padding-top: 15px;
+}
+
+.nav-bottom li:hover {
+	text-decoration: none;
+}
+
+.card {
+	max-width: 100%;
+	background-color: #CCC;
+	margin: 10px;
+	padding: 5px;
+}
+
+.card img {
+	max-width: 100%;
+}
+
+.card h4,
+p {
+	width: 100%;
+}
+
+
+/*--- Tablet---*/
+
+@media only screen and (min-width: 575px) {
+	header nav {
+		padding-bottom: 10px;
+	}
+	.main-nav li {
+		border-bottom: none;
+		text-align: center;
+		display: inline-block;
+		padding: 10px 0 10px 10px;
+		background-color: transparent;
+	}
+	.main-nav a {
+		font-size: 0.8em;
+		font-weight: 900;
+	}
+	section.index-banner {
+		height: 380px;
+	}
+	.vertical-center {
+		background-color: transparent;
+		text-align: center;
+		font-size: 0.9em;
+		padding-bottom: 250px;
+		margin: 0 auto;
+		top: 25px;
+		line-height: 20px;
+		width: 70%;
+	}
+	.figcaption h4 {
+		font-size: 0.7em;
+	}
+	.figcaption p {
+		font-size: 0.6em;
+	}
+	.nav-bottom:first-child {
+		padding-left: 0;
+	}
+	.nav-bottom li {
+		display: inline-block;
+		padding-left: 20px;
+	}
+}
+
+
+/*---Desktop---*/
+
+@media only screen and (min-width: 900px) {
+	header {
+		padding: 10px 0;
+	}
+	#logo {
+		justify-content: flex-start;
+		display: flex;
+	}
+	.main-nav li {
+		padding: 18px 0 10px 17px;
+	}
+	.main-nav a {
+		font-size: 0.9em;
+		font-weight: 800;
+		padding-left: 0;
+	}
+	.vertical-center {
+		background-position: center top;
+	}
+	.vertical-center h2 {
+		position: static;
+		font-size: 2.1em;
+		text-align: left;
+		margin-left: 0;
+		padding-top: 60px;
+		line-height: 35px;
+		width: 25%;
+	}
+	.figcaption {
+		padding-left: 15px;
+	}
+	.figcaption h4 {
+		font-size: 0.9em;
+	}
+	.figcaption p {
+		font-size: 0.8em;
+	}
+	footer {
+		padding: 15px 0;
+	}
+	.nav-bottom,
+	.copy {
+		display: flex;
+		justify-content: flex-start;
+	}
+	.nav-bottom {
+		margin: 0 105px;
+	}
+	footer li {
+		display: inline-block;
+	}
+	.copy {
+		padding-left: 25px;
+		padding-top: 5px;
+	}
+	.container {
+		display: flex;
+		padding: 0 100px;
+	}
+	#logo {
+		padding: 0 50px;
+	}
+	.item-3-figure {
+		display: flex;
+	}
+	.card {
+		max-width: 30%;
+	}
+}
