@@ -1,0 +1,15 @@
+.folder {
+	cursor: pointer;
+	font-weight: 600;
+}
+
+.file {
+	color: grey;
+}
+
+.placeholderText {
+	display: block;
+	color: grey;
+	font-weight: 400;
+	margin-left: 10px;
+}
