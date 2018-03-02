@@ -1,0 +1,36 @@
+* {
+	background-color: #1C1C1F;
+}
+
+ul,
+li {
+	list-style: none;
+	display: flex;
+	display: inline-block;
+}
+
+.name {
+	color: #A19E86;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+p {
+	color: #A19E86;
+	font-weight: 600;
+	font-size: 30px;
+}
+
+img {
+	width: 200px;
+	height: 200px;
+}
+
+a :hover {
+	background-color: #303030;
+}
+
+.icon {
+	width: 20px;
+	height: 10px;
+}
